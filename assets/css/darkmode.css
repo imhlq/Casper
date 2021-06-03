@@ -1,0 +1,16 @@
+/* Dark-Light Model Toggle */
+:root {
+    --bg-color: #f6f6f6;
+    --title-color: #292929;
+    --subtitle-color: #424242;
+    --primary-color: #536390;
+    --secondary-color: #505050;
+}
+[data-theme='dark'] {
+    --bg-color: #494f5c;
+    --title-color: #e8eef2;
+    --subtitle-color: #e8eef2;
+    --footer-color: #e8eef2;
+    --primary-color: #fff;
+    --secondary-color: #fff;
+}

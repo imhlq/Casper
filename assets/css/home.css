@@ -1,0 +1,75 @@
+@import url("darkmode.css");
+
+html, body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover{
+    text-shadow: 0 0 1px var(--secondary-color);
+}
+ul {
+    list-style-type: none;
+}
+
+#home {
+    display: flex;
+    flex-flow: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+
+#home-title {
+    color: var(--title-color);
+    font-size: 5em;
+    margin: 0;
+}
+
+#home-subtitle {
+    color: var(--subtitle-color);
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.nav {
+    opacity: .9;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    padding-left: 0;
+}
+
+.nav a{
+    display: block;
+    margin-top: .6em;
+    font-size: 1.5rem;
+}
+
+
+
+footer {
+    color: var(--footer-color);
+    opacity: .7;
+    flex-shrink: 0;
+    text-align: center;
+    margin-bottom: 1em;
+}

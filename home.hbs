@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{meta_title}}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />    
+    <link rel="stylesheet" href="{{asset 'css/home.css' }}" />
+
+
+</head>
+<body>
+
+    <div id="home">
+        
+        <div class="container animated fadeIn">
+
+            <div class="home-center">
+                <h1 id="home-title">{{@site.title}}</h1>
+                <p id='home-subtitle'> {{@site.description}} </p>
+            </div>
+
+            <!-- Dark-Light Mode Toggle -->
+            <div class="mode-toggle" onclick="switchTheme()">
+                <i class="fas fa-adjust fa-2x"></i>
+            </div>
+
+            {{navigation}}
+            {{!-- <div class="nav">
+
+                <a href="/blog">博客</a>
+                <a href="/about">关于</a>
+            </div> --}}
+        </div>
+
+        <footer>
+            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+        </footer>
+
+    </div>
+
+    <script src="{{asset 'js/darkmode.js' }}"></script>
+
+</body>
+</html>
